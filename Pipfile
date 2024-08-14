@@ -4,9 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+uvicorn = "*"
+fastapi = "*"
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.12"
 python_full_version = "3.12.5"
+
+
