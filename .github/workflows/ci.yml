@@ -19,8 +19,8 @@ jobs:
     - name: Build Docker image
       run: docker build -f Dockerfile.test . -t test
     
-    - name: Build Docker image
-      run: docker run -v ./:/app test 
+    - name: Run Tests
+      run: docker run -v $GITHUB_WORKSPACE:/app test 
 
     - name: Upload test report
       uses: actions/upload-artifact@v3
