@@ -11,7 +11,6 @@ env/
 .venv
 
 # Ignore Docker-related files
-Dockerfile
 docker-compose.yml
 
 # Ignore any environment variable files
