@@ -22,5 +22,11 @@ jobs:
     - name: Run Docker container
       run: docker run -d -p 8181:80 fastapi-hello-world
 
+    - name: Create
+      run: test=labas
+
+    - name: Test
+      run: echo $test
+
     - name: Verify the Docker container is running
-      run: curl -f http://localhost:8181 || exit 1
+      run: curl -f http://127.0.0.1:8181 || exit 1
